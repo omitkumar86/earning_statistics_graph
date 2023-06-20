@@ -141,15 +141,16 @@ class MonthGraphChart extends StatelessWidget {
       ),
     ];
     return Container(
-      height: 300.h,
+      height: 350.h,
       width: 700.w,
-      padding: EdgeInsets.all(16.0),
+      alignment: Alignment.center,
+      padding: EdgeInsets.only(bottom: 10.h),
       child: charts.BarChart(
         series,
         animate: true,
         domainAxis: charts.OrdinalAxisSpec(
           renderSpec: charts.SmallTickRendererSpec(
-            labelRotation: 20,
+            labelRotation: 30,
           ),
         ),
       ),

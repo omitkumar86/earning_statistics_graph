@@ -47,15 +47,16 @@ class WeekGraphChart extends StatelessWidget {
       ),
     ];
     return Container(
-      height: 300.h,
+      alignment: Alignment.center,
+      padding: EdgeInsets.only(bottom: 10.h),
+      height: 350.h,
       width: 400.w,
-      padding: EdgeInsets.all(16.0),
       child: charts.BarChart(
         series,
         animate: true,
         domainAxis: charts.OrdinalAxisSpec(
           renderSpec: charts.SmallTickRendererSpec(
-            labelRotation: 20,
+            labelRotation: 30,
           ),
         ),
       ),
